@@ -1,0 +1,1 @@
+C:\Users\Blvke\source\repos\TransactionTrackerUI\TransactionTrackerUI\TransactionTrackerUI.csproj;x64

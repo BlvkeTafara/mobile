@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TransactionTrackerUI.Views.LoginPage"
+             Title="LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="images.jpg" VerticalOptions="Fill" Aspect="Fill"/>
+            <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="User Name" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                <Frame Grid.Row="1" Grid.Column="0"   HeightRequest="50">
+                    <Entry TextColor="WhiteSmoke" IsPassword="True" HeightRequest="48" WidthRequest="200"/>
+                </Frame>
+                <Label Grid.Row="2" Text="Password" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                <Frame Grid.Row="3" HeightRequest="50">
+                    <Entry TextColor="WhiteSmoke" IsPassword="True" HeightRequest="48" WidthRequest="200"/>
+                </Frame>
+                <Grid Grid.Row="4" Padding="0,40,0,0">
+                    <VerticalStackLayout Spacing="20">
+                        <Button Text="Login" Command="{Binding LoginCommand}" TextColor="WhiteSmoke" HeightRequest="40" WidthRequest="100" BackgroundColor="Aquamarine"/>
+                        <Button Text="Register" Command="{Binding RegisterCommand}" TextColor="WhiteSmoke" HeightRequest="40" WidthRequest="100" BackgroundColor="DarkSlateGray"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
